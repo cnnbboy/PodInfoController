@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'PodInfoController', :exclusive => true do
+  pod "PodInfoController", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "PodInfoController", :path => "../"
+
+  
+end
