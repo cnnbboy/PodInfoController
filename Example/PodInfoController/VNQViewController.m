@@ -7,6 +7,7 @@
 //
 
 #import "VNQViewController.h"
+#import <PodInfoController/VNQPodInfoController.h>
 
 @interface VNQViewController ()
 

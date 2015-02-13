@@ -1,0 +1,5 @@
+#include "Pods-PodInfoController-PodInfoController.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/PodInfoController" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/LibYAML" "${PODS_ROOT}/Headers/Public/PodInfoController" "${PODS_ROOT}/Headers/Public/YAML-Framework"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}
