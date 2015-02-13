@@ -16,8 +16,31 @@ extern NSString* const COCOAPODS_PODFILE_PODVERSION;
 
 - (NSDictionary*)podfileAsDictionary;
 
+/**
+ returns the raw PODS section of the Podfile.lock
+ */
 - (NSArray*)pods;
+
+/**
+ returns the raw DEPENDENCIES section of the Podfile.lock
+ This is the representation of the Podfile specified pods.
+ */
 - (NSArray*)dependencies;
+
+/**
+ returns the version of the pod toolset used for the creation of that Podfile.lock
+ */
 - (NSString*)podVersion;
+
+/**
+ returns the DEPENDENCIES with the actual linked cocoapod versions
+ This returns the specified pods with the actual version.
+ */
+- (NSArray*)dependenciesWithInstalledVersion;
+
+/**
+ returns the PODS traversed as a tree structure with the acutal linked cocoapod versions.
+ */
+- (NSArray*)podsAsTree;
 
 @end

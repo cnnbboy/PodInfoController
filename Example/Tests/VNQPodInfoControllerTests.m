@@ -30,6 +30,15 @@
   [[[VNQPodInfoController alloc] init] podfileAsDictionary];
 }
 
+- (void)testDependenciesResolved {
+  [[[VNQPodInfoController alloc] init] dependenciesWithInstalledVersion];
+}
+
+- (void)testPodsResolved {
+//  [[[VNQPodInfoController alloc] init] topLevelPods];
+}
+
+
 - (void)testExample {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
